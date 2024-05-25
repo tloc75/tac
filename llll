@@ -1,0 +1,51 @@
+local GC = getconnections
+for i, v in pairs(GC(game.Players.LocalPlayer.Idled)) do
+    v:Disable()
+end
+
+print(" LOADING . . . ")
+if game.PlaceId == 914010731 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Note",
+        Text = "WAIT FEW SECONDS TO LOAD",
+        Icon = "rbxassetid://2541869220",
+        Duration = 10
+    })
+    wait()
+    loadstring(game:HttpGet("https://gitlab.com/vugiakhiem2106/game/-/raw/main/"..game.PlaceId.."_RoGhoul"..".lua"))()
+elseif game.PlaceId == 537413528 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Note",
+        Text = "WAIT FEW SECONDS TO LOAD",
+        Icon = "rbxassetid://2541869220",
+        Duration = 10
+    })
+    wait()
+    loadstring(game:HttpGet("https://gitlab.com/vugiakhiem2106/game/-/raw/main/"..game.PlaceId.."_BuildBoatForTreasure"..".lua"))()
+elseif game.PlaceId == 13808990310 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Note",
+        Text = "WAIT FEW SECONDS TO LOAD",
+        Icon = "rbxassetid://2541869220",
+        Duration = 10
+    })
+    wait()
+    loadstring(game:HttpGet("https://gitlab.com/vugiakhiem2106/game/-/raw/main/"..game.PlaceId.."_TLS"..".lua"))()
+elseif game.PlaceId == 3237168 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Note",
+        Text = "WAIT FEW SECONDS TO LOAD",
+        Icon = "rbxassetid://2541869220",
+        Duration = 10
+    })
+    wait()
+    loadstring(game:HttpGet("https://gitlab.com/vugiakhiem2106/game/-/raw/main/"..game.PlaceId.."_OPL"..".lua"))()
+else
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Error",
+        Text = "GAME NOT SUPPORTED",
+        Icon = "rbxassetid://2541869220",
+        Duration = 10
+    })
+end
